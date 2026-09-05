@@ -1,0 +1,46 @@
+.founders-hero{padding:142px 0 54px;background:linear-gradient(120deg,#0b2945,#1a618a);color:#fff;position:relative;overflow:hidden}
+.founders-hero:after{content:"";position:absolute;inset:auto -10% -65% 38%;height:420px;background:radial-gradient(circle at center,rgba(123,204,240,.28),transparent 64%);pointer-events:none}
+.founders-hero-inner{position:relative;z-index:1}.founders-hero h1{font-size:clamp(48px,6.5vw,76px);line-height:.98;letter-spacing:-.05em;margin:0 0 16px}.founders-hero p{max-width:760px;font-size:19px;color:#d7e7f1;margin:0}
+.founders-stage{padding:72px 0;background:linear-gradient(#f7f4ef,#ece8e1)}
+.founders-stage-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.stone-wall{padding:38px;border-radius:28px;background:linear-gradient(135deg,#cfc8bd,#eee9df 44%,#c7beb1);box-shadow:inset 0 0 0 1px rgba(80,69,56,.18),0 24px 60px rgba(30,34,38,.16);position:relative;overflow:hidden}
+.stone-wall:before,.stone-wall:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 49.5%,rgba(90,77,61,.12) 50%,transparent 50.5%),linear-gradient(0deg,transparent 49.5%,rgba(90,77,61,.08) 50%,transparent 50.5%);background-size:190px 100%,100% 145px;mix-blend-mode:multiply;pointer-events:none}
+.bronze-plaque{position:relative;padding:18px;border-radius:8px;background:linear-gradient(135deg,#4a2c12 0%,#a56d2e 12%,#d2a558 31%,#87501f 53%,#c99549 72%,#5a3517 100%);box-shadow:0 22px 32px rgba(49,32,18,.34),inset 0 0 0 2px rgba(52,29,9,.48),inset 0 0 0 5px rgba(255,222,150,.18)}
+.bronze-plaque:after{content:"";position:absolute;inset:0;border-radius:8px;background:repeating-linear-gradient(100deg,rgba(255,255,255,.025) 0 1px,rgba(0,0,0,.02) 1px 3px);pointer-events:none}
+.plaque-inner{position:relative;z-index:2;padding:34px 46px 30px;border:1px solid rgba(65,35,10,.7);box-shadow:inset 0 0 0 1px rgba(255,227,174,.28);text-align:center;color:#2b1708;text-shadow:0 1px 0 rgba(255,221,161,.32)}
+.plaque-title{font-family:Georgia,"Times New Roman",serif;font-size:clamp(34px,4vw,50px);font-weight:700;letter-spacing:-.02em}
+.plaque-subtitle{font-family:Georgia,"Times New Roman",serif;font-size:clamp(18px,2vw,24px);font-style:italic;line-height:1.3;margin:18px 0 24px}
+.plaque-rule{width:64%;height:2px;margin:16px auto;background:linear-gradient(90deg,transparent,#3c210c 15%,#3c210c 85%,transparent);box-shadow:0 1px 0 rgba(255,222,161,.28)}
+.plaque-rule-bottom{margin-top:24px}
+.plaque-names{display:grid;gap:7px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(20px,2.2vw,29px);line-height:1.08}.plaque-names div{white-space:nowrap}
+.plaque-year{font-family:Georgia,"Times New Roman",serif;font-size:clamp(16px,1.8vw,21px);font-style:italic;font-weight:700}
+.plaque-screw{position:absolute;width:20px;height:20px;border-radius:50%;z-index:5;background:radial-gradient(circle at 35% 30%,#f1cf87 0 11%,#9a642c 26%,#4b2a0f 63%,#d19a4c 68%,#523017 100%);box-shadow:inset 0 0 0 1px rgba(38,20,7,.7),0 1px 2px rgba(0,0,0,.4)}
+.plaque-screw:after{content:"";position:absolute;left:4px;right:4px;top:9px;height:1px;background:#3c220e;transform:rotate(-23deg);box-shadow:0 1px 0 rgba(255,220,149,.25)}
+.screw-tl{left:14px;top:14px}.screw-tr{right:14px;top:14px}.screw-bl{left:14px;bottom:14px}.screw-br{right:14px;bottom:14px}
+.founders-story h2{font-size:clamp(38px,4.7vw,56px);line-height:1.03;letter-spacing:-.04em;margin:0 0 18px}.founders-story>p{font-size:17px;color:var(--muted);margin:0 0 28px}
+.founder-facts{display:grid;gap:12px}.founder-fact{padding:17px 18px;border-radius:16px;background:#fff;border:1px solid #ddd6ca;display:flex;align-items:baseline;justify-content:space-between;gap:18px;box-shadow:0 8px 22px rgba(43,36,28,.05)}.founder-fact strong{font-size:22px}.founder-fact span{color:var(--muted);font-size:14px;text-align:right}
+
+@media(max-width:1060px){
+  .founders-stage-grid{grid-template-columns:1fr}
+  .stone-wall{padding:28px}
+  .plaque-inner{padding:32px 36px 28px}
+}
+@media(max-width:760px){
+  .founders-hero{padding:118px 0 46px}
+  .founders-hero h1{font-size:clamp(42px,12vw,62px)}
+  .founders-stage{padding:52px 0}
+  .founders-stage-grid{gap:30px}
+  .stone-wall{padding:22px;border-radius:22px}
+  .plaque-inner{padding:30px 28px 26px}
+}
+@media(max-width:500px){
+  .stone-wall{padding:14px}
+  .bronze-plaque{padding:12px}
+  .plaque-inner{padding:28px 18px 24px}
+  .plaque-title{font-size:34px}
+  .plaque-subtitle{font-size:17px}
+  .plaque-names{font-size:21px}
+  .plaque-names div{white-space:normal}
+  .founder-fact{align-items:flex-start;flex-direction:column}
+  .founder-fact span{text-align:left}
+}
